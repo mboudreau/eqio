@@ -1,0 +1,55 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../eqio.js';
+
+<Meta
+  title="Eqio"
+  parameters={{
+    component: "eq-io",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# Eqio
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add eqio
+```
+
+```js
+import 'eqio/eqio.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <eq-io></eq-io>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="eqio" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <eq-io .title=${'Hello World'}></eq-io>
+  `}
+</Story>
